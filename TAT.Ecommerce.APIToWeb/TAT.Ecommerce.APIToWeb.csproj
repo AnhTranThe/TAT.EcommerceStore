@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TAT.Ecommerce.DTOs\TAT.Ecommerce.DTOs.csproj" />
+    <ProjectReference Include="..\TAT.Ecommerce.ViewModels\TAT.Ecommerce.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
