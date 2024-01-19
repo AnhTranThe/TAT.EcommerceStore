@@ -10,10 +10,14 @@ namespace TAT.Ecommerce.Infrastructure.DI
 
         public static IServiceCollection AddInfrastructureLayer(this IServiceCollection services, IConfiguration configuration)
         {
-
-            _ = services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("TAT_EcommerceDB"))
+            string? connectionString = configuration.GetConnectionString("TAT_EcommerceDB");
+            if (!string.IsNullOrEmpty(connectionString))
+            {
+                _ = services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(connectionString)
             );
+            }
+
 
             return services;
         }
