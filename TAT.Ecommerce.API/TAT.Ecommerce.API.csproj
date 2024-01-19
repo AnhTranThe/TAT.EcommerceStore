@@ -18,7 +18,6 @@
     <ProjectReference Include="..\TAT.Ecommerce.Application\TAT.Ecommerce.Application.csproj" />
     <ProjectReference Include="..\TAT.Ecommerce.DTOs\TAT.Ecommerce.DTOs.csproj" />
     <ProjectReference Include="..\TAT.Ecommerce.Infrastructure\TAT.Ecommerce.Infrastructure.csproj" />
-    <ProjectReference Include="..\TAT.Ecommerce.Service\TAT.Ecommerce.Service.csproj" />
     <ProjectReference Include="..\TAT.Ecommerce.Utilities\TAT.Ecommerce.Utilities.csproj" />
   </ItemGroup>
 
